@@ -4,18 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- bootstrap 5.3.2 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Lobster&display=swap"
-        rel="stylesheet">
+
+    <!-- font-awesome -->
     <script src="https://kit.fontawesome.com/e53e997c50.js" crossorigin="anonymous"></script>
 
+    <!-- enlace al archivo style.css -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Viajes Chile</title>
 </head>
@@ -25,17 +21,19 @@
     <!-- nav -->
     <nav class="navbar ps-5 navbar-dark navbar-transparent fixed-top navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand text-light col-9" href="#">Viajes Chile</a>
+            <a class="navbar-brand text-light col-8" href="#"><img
+                    style="width: 27px; height: 27px; padding-right: 3px;" src="./assets/img/viajes.svg"
+                    alt="iconViajes">Viajes Chile</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link" href="#">Features</a>
-                    <a class="nav-link" href="#">Pricing</a>
-                    <a class="nav-link" href="#">Disabled</a>
-                    <a class="nav-link" href="#">Disabled</a>
+            <div class="collapse navbar-collapse ps-5" id="navbarNavAltMarkup">
+                <div class="navbar-nav text-end">
+                    <a class="nav-link" href="#">Inicio</a>
+                    <a class="nav-link" href="#quienesSomos">Quienes Somos</a>
+                    <a class="nav-link" href="#destacado">Destacado</a>
+                    <a class="nav-link" href="#contacto">Contacto</a>
                 </div>
             </div>
         </div>
@@ -68,46 +66,69 @@
 
 
     <!-- quienes somos -->
-    <section class="container-fluid mx-auto row section-quienes-somos">
+    <section id="quienesSomos" class="container-fluid mx-auto row section-quienes-somos">
         <div class="container col-12">
-            <h2>¿QUIÉNES SOMOS? <hr></h2>
+            <h2>¿QUIÉNES SOMOS?
+                <hr>
+            </h2>
         </div>
 
- 
+
 
         <div class="col-4">
-            <div class="tarjeta card text-bg-info mb-3" style="padding: 0; margin: 0; border: 0;">
-                <div class="card bg-info text-light" style="border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
-                    Header</div>
-                <div class="tarjeta card-body text-bg-dark">
-                    <h5 class="card-title">Info card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
+            <div class="tarjeta card mb-3 bg-black" style="padding: 0; margin: 0; border: 0;">
+                <div class="card bg-info text-light mx-auto" style="border: 0; width: 100%; text-align: center;">
+                    <i class="fa-solid fa-plane fa-2x bg-info p-2"
+                        style="border-top-left-radius: 20px; border-top-right-radius: 20px;"></i>
+                </div>
+                <div class="tarjeta card-body text-light">
+                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium beatae
+                        numquam expedita debitis fugit minima unde commodi eius, itaque, tenetur mollitia? Minus
+                        voluptates ratione esse aperiam. Eligendi, cum. Animi, illum. Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Rerum placeat adipisci at quibusdam totam doloremque voluptates,
+                        repellendus voluptatibus quidem eligendi nisi numquam similique explicabo corrupti minus sint
+                        perferendis! Illum, aperiam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+                        recusandae sed numquam blanditiis dolorum officiis tenetur, aut laboriosam itaque harum
+                        perferendis laudantium exercitationem ea neque, quod voluptatem vel debitis? Ipsa!</p>
                 </div>
             </div>
         </div>
 
         <div class="col-4">
-            <div class="tarjeta-medio card text-bg-info  mb-3" style="padding: 0; margin: 0; border: 0;">
-                <div class="tarjeta-medio card-body text-bg-dark">
-                    <h5 class="card-title">Info card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
+            <div class="tarjeta-medio card bg-black mb-3" style="padding: 0; margin: 0; border: 0;">
+                <div class="tarjeta-medio card-body text-light">
+                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium beatae
+                        numquam expedita debitis fugit minima unde commodi eius, itaque, tenetur mollitia? Minus
+                        voluptates ratione esse aperiam. Eligendi, cum. Animi, illum. Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Rerum placeat adipisci at quibusdam totam doloremque voluptates,
+                        repellendus voluptatibus quidem eligendi nisi numquam similique explicabo corrupti minus sint
+                        perferendis! Illum, aperiam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+                        recusandae sed numquam blanditiis dolorum officiis tenetur, aut laboriosam itaque harum
+                        perferendis laudantium exercitationem ea neque, quod voluptatem vel debitis? Ipsa!</p>
                 </div>
-                <div class="card bg-info text-light" style="border-top-left-radius: 0; border-top-right-radius: 0;">Header
+                <div class="card bg-info text-light mx-auto" style="border: 0; width: 100%; text-align: center;">
+                    <i class="fa-solid fa-mountain fa-2x bg-info p-2"
+                        style="border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;"></i>
                 </div>
 
             </div>
         </div>
 
         <div class="col-4">
-            <div class="tarjeta card text-bg-info  mb-3" style="padding: 0; margin: 0; border: 0;">
-                <div class="card bg-info text-light" style="border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
-                    Header</div>
-                <div class="tarjeta card-body text-bg-dark">
-                    <h5 class="card-title">Info card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
+            <div class="tarjeta card bg-black mb-3" style="padding: 0; margin: 0; border: 0;">
+                <div class="card bg-info text-light mx-auto" style="border: 0; width: 100%; text-align: center;">
+                    <i class="fa-solid fa-route fa-2x bg-info p-2"
+                        style="border-top-left-radius: 20px; border-top-right-radius: 20px;"></i>
+                </div>
+                <div class="tarjeta card-body text-light">
+                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium beatae
+                        numquam expedita debitis fugit minima unde commodi eius, itaque, tenetur mollitia? Minus
+                        voluptates ratione esse aperiam. Eligendi, cum. Animi, illum. Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Rerum placeat adipisci at quibusdam totam doloremque voluptates,
+                        repellendus voluptatibus quidem eligendi nisi numquam similique explicabo corrupti minus sint
+                        perferendis! Illum, aperiam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+                        recusandae sed numquam blanditiis dolorum officiis tenetur, aut laboriosam itaque harum
+                        perferendis laudantium exercitationem ea neque, quod voluptatem vel debitis? Ipsa!</p>
                 </div>
             </div>
         </div>
@@ -118,16 +139,19 @@
 
 
     <!-- destacados -->
-    <section class="container-fluid mx-auto row section-destacados">
-        
+    <section id="destacado" class="container-fluid mx-auto row section-destacados" >
+
         <div class="container col-12">
-            <h2>DESTACADOS <hr></h2>
+            <h2>DESTACADOS
+                <hr>
+            </h2>
         </div>
 
         <div class="col-3">
-            <div class="card text-bg-dark">
-                <img src="./assets/img/card1.jpg" class="card-img-top" alt="...">
+            <div class="card text-light bg-info card-destacado">
+                <img src="./assets/img/card1.jpg" class="card-img-top img-destacado" alt="...">
                 <div class="card-body">
+                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
                 </div>
@@ -135,9 +159,10 @@
         </div>
 
         <div class="col-3">
-            <div class="card text-bg-dark">
-                <img src="./assets/img/card2.jpg" class="card-img-top" alt="...">
+            <div class="card text-light bg-info card-destacado">
+                <img src="./assets/img/card2.jpg" class="card-img-top img-destacado" alt="...">
                 <div class="card-body">
+                    <h5>Totam laudantium ducimus illum ullam expedita pariatur.</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
                 </div>
@@ -145,9 +170,10 @@
         </div>
 
         <div class="col-3">
-            <div class="card text-bg-dark">
-                <img src="./assets/img/card3.jpg" class="card-img-top" alt="...">
+            <div class="card text-light bg-info card-destacado">
+                <img src="./assets/img/card3.jpg" class="card-img-top img-destacado" alt="...">
                 <div class="card-body">
+                    <h5>Quidem laborum non excepturi at nostrum.</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
                 </div>
@@ -155,9 +181,10 @@
         </div>
 
         <div class="col-3">
-            <div class="card text-bg-dark">
-                <img src="./assets/img/card4.jpg" class="card-img-top" alt="...">
+            <div class="card text-light bg-info card-destacado">
+                <img src="./assets/img/card4.jpg" class="card-img-top img-destacado" alt="...">
                 <div class="card-body">
+                    <h5>Tenetur quidem laborum non excepturi at nostrum, minimao.</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
                 </div>
@@ -169,42 +196,51 @@
 
 
     <!-- contacto -->
-    <section class="container-fluid mx-auto row section-contacto">
+    <section id="contacto" class="container-fluid mx-auto row section-contacto">
         <div class="container col-12">
-            <h2>CONTACTO <hr></h2>
+            <h2>CONTACTO
+                <hr>
+            </h2>
         </div>
 
-            <!-- formulario -->
-            <form action="" class="text-light">
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-                    <input type="nombre" class="form-control" id="exampleFormControlInput1" placeholder="">
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Asunto</label>
-                    <input type="asunto" class="form-control" id="exampleFormControlInput1" placeholder="">
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="7"></textarea>
-                  </div>
-                  <div class="col-auto">
-                    <button type="submit" class="btn text-light btn-info mb-3">Confirm identity</button>
-                  </div>
-            </form>
+        <!-- formulario -->
+        <form class="text-light">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                <input type="nombre" class="form-control" id="exampleFormControlInput1" placeholder="">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Asunto</label>
+                <input type="asunto" class="form-control" id="exampleFormControlInput1" placeholder="">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="7"></textarea>
+            </div>
+            <div class="col-auto">
+                <button type="submit" class="btn text-light btn-info mb-3">Enviar</button>
+            </div>
+        </form>
     </section>
 
 
     <!-- footer -->
-    <footer class="container-fluid text-light mx-auto bg-info p-0 m-0 row footer-contenedor">
-            <h2 class="col-6 p-2">VIAJES CHILE</h2>
-            
-            <div class="col-6 section-iconos p-2">
-                <i class="fa-brands fa-github iconos-footer p-2"></i>
-                <i class="fa-brands fa-linkedin iconos-footer p-2"></i>
-                <i class="fa-brands fa-square-twitter iconos-footer p-2"></i>
-                <i class="fa-brands fa-square-facebook iconos-footer p-2"></i>
+    <footer class="container-fluid text-light mx-auto bg-info m-0 row footer-contenedor">
+        <div class="col-6">
+            <h2 class="col-9 p-2">VIAJES CHILE</h2>
+        </div>
+
+        <div class="col-6">
+            <div class="col-12 section-iconos p-2">
+                <a href="https://github.com/" target="_blank" style="text-decoration: none; color: lightcyan;"><i class="fa-brands fa-github iconos-footer p-2"></i></a>
+                <a href="https://linkedin.com/" target="_blank" style="text-decoration: none; color: lightcyan;"><i class="fa-brands fa-linkedin iconos-footer p-2"></i></a>
+                <a href="https://twitter.com/" target="_blank" style="text-decoration: none; color: lightcyan;"><i class="fa-brands fa-square-twitter iconos-footer p-2"></i></a>
+                <a href="https://facebook.com" target="_blank" style="text-decoration: none; color: lightcyan;"><i class="fa-brands fa-square-facebook iconos-footer p-2"></i></a>
             </div>
+        </div>
+        
+
+
 
     </footer>
 

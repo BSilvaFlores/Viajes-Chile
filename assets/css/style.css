@@ -18,9 +18,6 @@ section{
 }
 
 /* NAV */
-nav{
-    
-}
 
 
 /* HEADER */
@@ -29,9 +26,9 @@ nav{
 
 
 /* SECTIONS */
-.section-contacto, .section-destacados, .section-quienes-somos{
-    padding-left: 40px;
-    padding-right: 40px;
+.section-contacto, .section-destacados, .section-quienes-somos, nav{
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 
@@ -53,11 +50,22 @@ nav{
 
 /* SECTION DESTACADOS */
 
+.img-destacado{
+    height: 250px;
+    width: 100%;
+}
 
+.card-destacado{
+    border: 1px solid white;
+}
 
+.section-quienes-somos{
 
-
-
+    @media (max-width: 767px) {
+        display: none;
+    }
+ 
+}
 
 
 
