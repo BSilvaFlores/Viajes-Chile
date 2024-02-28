@@ -59,13 +59,7 @@ section{
     border: 1px solid white;
 }
 
-.section-quienes-somos{
 
-    @media (max-width: 767px) {
-        display: none;
-    }
- 
-}
 
 
 
@@ -82,4 +76,52 @@ section{
 
 .iconos-footer{
     font-size: 30px;
+}
+
+
+
+/* MEDIA QUERY */
+.section-quienes-somos{
+
+    @media (max-width: 767px) {
+        display: none;
+    }
+ 
+}
+
+.navbar{
+    @media (max-width: 1024px) {
+        margin-right: 70px;
+    }
+
+    @media (max-width: 767px) {
+        margin-right: 0;
+    }
+    
+}
+
+h2{
+
+    @media (max-width: 767px) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.section-destacados{
+    @media (max-width: 1024px) {
+        padding-top: 25px;
+    }
+}
+
+.desta{
+    @media (max-width: 1024px) {
+        height: 290px;
+    }
+}
+
+.desta{
+    @media (max-width: 767px) {
+        height: 190px;
+    }
 }
