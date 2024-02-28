@@ -1,3 +1,41 @@
+/* GENERAL */
+body{
+    background-color: #000000;
+    
+}
+
+h2{
+    text-align: center;
+    color: #f8f9fa;
+    padding-left: 70px; 
+    padding-right: 70px;
+}
+
+
+
+section{
+    padding-bottom: 50px;
+}
+
+/* NAV */
+nav{
+    
+}
+
+
+/* HEADER */
+
+
+
+
+/* SECTIONS */
+.section-contacto, .section-destacados, .section-quienes-somos{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+/* SECTION QUIENES-SOMOS */
 .tarjeta{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -6,4 +44,34 @@
 .tarjeta-medio{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+}
+
+.section-quienes-somos{
+    padding-top: 35px;
+}
+
+
+/* SECTION DESTACADOS */
+
+
+
+
+
+
+
+
+
+/* SECTION CONTACTO */
+
+
+
+/* FOOTER */
+.section-iconos{
+    display: flex;
+
+    justify-content: center;
+}
+
+.iconos-footer{
+    font-size: 30px;
 }

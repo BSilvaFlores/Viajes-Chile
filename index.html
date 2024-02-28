@@ -23,9 +23,9 @@
 <body>
 
     <!-- nav -->
-    <nav class="navbar navbar-transparent fixed-top navbar-expand-lg">
+    <nav class="navbar ps-5 navbar-dark navbar-transparent fixed-top navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Viajes Chile</a>
+            <a class="navbar-brand text-light col-9" href="#">Viajes Chile</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -42,7 +42,7 @@
     </nav>
 
     <!-- header -->
-    <header class="container-fluid header-contenedor">
+    <header class="container-fluid header-contenedor" style="margin: 0; padding: 0;">
         <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -68,14 +68,16 @@
 
 
     <!-- quienes somos -->
-    <section class="container row section-quienes-somos">
-        <h2>¿QUIÉNES SOMOS?
-            <hr>
-        </h2>
+    <section class="container-fluid mx-auto row section-quienes-somos">
+        <div class="container col-12">
+            <h2>¿QUIÉNES SOMOS? <hr></h2>
+        </div>
+
+ 
 
         <div class="col-4">
             <div class="tarjeta card text-bg-info mb-3" style="padding: 0; margin: 0; border: 0;">
-                <div class="card text-bg-info" style="border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
+                <div class="card bg-info text-light" style="border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
                     Header</div>
                 <div class="tarjeta card-body text-bg-dark">
                     <h5 class="card-title">Info card title</h5>
@@ -92,7 +94,7 @@
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
                 </div>
-                <div class="card text-bg-info" style="border-top-left-radius: 0; border-top-right-radius: 0;">Header
+                <div class="card bg-info text-light" style="border-top-left-radius: 0; border-top-right-radius: 0;">Header
                 </div>
 
             </div>
@@ -100,7 +102,7 @@
 
         <div class="col-4">
             <div class="tarjeta card text-bg-info  mb-3" style="padding: 0; margin: 0; border: 0;">
-                <div class="card text-bg-info" style="border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
+                <div class="card bg-info text-light" style="border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
                     Header</div>
                 <div class="tarjeta card-body text-bg-dark">
                     <h5 class="card-title">Info card title</h5>
@@ -116,12 +118,14 @@
 
 
     <!-- destacados -->
-    <section class="container row section-destacados">
+    <section class="container-fluid mx-auto row section-destacados">
         
-        <h2>DESTACADOS <hr></h2>
+        <div class="container col-12">
+            <h2>DESTACADOS <hr></h2>
+        </div>
 
         <div class="col-3">
-            <div class="card" style="width: 18rem;">
+            <div class="card text-bg-dark">
                 <img src="./assets/img/card1.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
@@ -131,7 +135,7 @@
         </div>
 
         <div class="col-3">
-            <div class="card" style="width: 18rem;">
+            <div class="card text-bg-dark">
                 <img src="./assets/img/card2.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
@@ -141,7 +145,7 @@
         </div>
 
         <div class="col-3">
-            <div class="card" style="width: 18rem;">
+            <div class="card text-bg-dark">
                 <img src="./assets/img/card3.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
@@ -151,7 +155,7 @@
         </div>
 
         <div class="col-3">
-            <div class="card" style="width: 18rem;">
+            <div class="card text-bg-dark">
                 <img src="./assets/img/card4.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
@@ -165,16 +169,43 @@
 
 
     <!-- contacto -->
-    <section class="section-contacto">
+    <section class="container-fluid mx-auto row section-contacto">
+        <div class="container col-12">
+            <h2>CONTACTO <hr></h2>
+        </div>
 
-        <h2>CONTACTO <hr></h2>
-
+            <!-- formulario -->
+            <form action="" class="text-light">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                    <input type="nombre" class="form-control" id="exampleFormControlInput1" placeholder="">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Asunto</label>
+                    <input type="asunto" class="form-control" id="exampleFormControlInput1" placeholder="">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="7"></textarea>
+                  </div>
+                  <div class="col-auto">
+                    <button type="submit" class="btn text-light btn-info mb-3">Confirm identity</button>
+                  </div>
+            </form>
     </section>
 
 
     <!-- footer -->
-    <footer class="footer-contenedor">
-        <h2>VIAJES CHILE</h2>
+    <footer class="container-fluid text-light mx-auto bg-info p-0 m-0 row footer-contenedor">
+            <h2 class="col-6 p-2">VIAJES CHILE</h2>
+            
+            <div class="col-6 section-iconos p-2">
+                <i class="fa-brands fa-github iconos-footer p-2"></i>
+                <i class="fa-brands fa-linkedin iconos-footer p-2"></i>
+                <i class="fa-brands fa-square-twitter iconos-footer p-2"></i>
+                <i class="fa-brands fa-square-facebook iconos-footer p-2"></i>
+            </div>
+
     </footer>
 
 
