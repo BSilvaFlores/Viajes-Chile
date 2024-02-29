@@ -88,25 +88,25 @@ section{
 /* MEDIA QUERY */
 .section-quienes-somos{
 
-    @media (max-width: 767px) {
+    @media (max-width: 1024px) {
         display: none;
     }
  
 }
 
 .navbar{
-    @media (max-width: 1024px) {
-        margin-right: 70px;
+    @media (max-width: 1280px) {
+        margin-right: 150px;
     }
+}
 
+.navbar{
     @media (max-width: 767px) {
-        margin-right: 0;
+        margin-right: 50px;
     }
-    
 }
 
 h2{
-
     @media (max-width: 767px) {
         padding-left: 0;
         padding-right: 0;
@@ -116,27 +116,40 @@ h2{
 .section-destacados{
     @media (max-width: 1024px) {
         padding-top: 25px;
+        
     }
 }
 
 .desta{
     @media (max-width: 1024px) {
-        height: 290px;
+        height: 150px;
     }
 }
 
 .desta{
     @media (max-width: 767px) {
-        height: 190px;
+        height: 250px;
     }
 }
 
 .desta{
     @media (min-width: 1025px) {
-        height: 190px;
+        height: 210px;
     }
 }
 
+.section-destacados{
+    @media (max-width: 767px) {
+        width: 420px;
+        padding-left: 15px;
+    }
+}
+
+.ancho{
+    @media (max-width: 767px) {
+        width: 100%;
+    }
+}
 
 /* GOOGLE FONTS */
 .poppins-thin {
